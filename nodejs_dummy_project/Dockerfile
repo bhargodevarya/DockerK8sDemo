@@ -9,6 +9,6 @@ ADD "./index.js" "/app"
 
 RUN ["npm", "install"]
 
-EXPOSE 9090
+EXPOSE 6060
 
 CMD ["npm", "run", "start"]

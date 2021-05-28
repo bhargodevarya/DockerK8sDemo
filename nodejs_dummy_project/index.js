@@ -4,7 +4,7 @@ const axios = require('axios').default
 const app = express()
 
 app.get('/', (req, res) => {
-    return axios.get('http://localhost:7070/getdata').then(response => {
+    return axios.get('http://data-api:7070/getdata').then(response => {
         console.log("Received response from the API")
         res.send(response.data)
     }).catch(err => {
