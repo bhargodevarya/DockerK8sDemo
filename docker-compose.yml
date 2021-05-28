@@ -2,13 +2,15 @@ version: '3'
 
 services:
     data-api:
-        build: ./data-api
+        image: bhargodevarya/data-api:latest
+        #build: ./data-api
         ports: 
             - "7070:7070"
         networks: 
             - backend
     dashboard:
-        build: ./nodejs_dummy_project
+        image: bhargodevarya/dashboard:latest
+        #build: ./nodejs_dummy_project
         ports: 
             - "6060:6060"
         networks: 
